@@ -1,0 +1,48 @@
+body {
+  font-family: monospace, Arial, Helvetica, sans-serif;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.landSeksjon {
+  padding: 2rem;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  font-weight: bolder;
+  background-color: cyan;
+}
+
+section {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#f1table {
+  width: 100%;
+}
+
+/* Denne regelen gjelder alle th-elementer som er barn
+av elementet med id = f1table */
+#f1table th {
+  text-align: left;
+}
+
+/*
+Med pseudo-selectorer som :hover kan vi velge hva som skjer
+når et element er i en gitt "state". Her velger vi hva som skjer
+når man hovrer (tar pekeren over) en rad i tbody, som også må være et barn
+av f1table.
+*/
+#f1table tbody tr:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}

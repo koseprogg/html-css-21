@@ -1,0 +1,88 @@
+<!--
+    Forteller nettleseren at dette er et HTML-dokument.
+    Alle HTML-dokumenter skal ha denne øverst.
+-->
+<!DOCTYPE html>
+
+<!--
+    html-tagen er rotnoden (øverste noden i treet).
+    Det vil si at alle elementene i dokumentet ligger inni (er et barn) av denne.
+-->
+<html lang="no">
+  <!-- 
+    I head-tagen legger vi inn elementer som definerer metadata om dokumentet.
+    Dette er for eksempel JavaSript eller CSS-filer vi vil laste inn.
+-->
+  <head>
+    <!--
+        Denne tagen f.eks. forteller nettleseren at vi skal bruke UTF-8 som tegnkodeformat,
+        som er en slags ordbok for 0ere og 1ere til vanlig tekst. Denne kan du for det aller meste se
+        bort i fra, men om Æ-Ø-Å'ene dine ser rare ut er det i 99% av tilfellene bare denne som mangler.
+    -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Dette er tittelen til nettsiden, typisk den du ser i fane-navnet på nettleseren din. -->
+    <title>Intro til HTML og CSS</title>
+
+    <!-- Denne tagen forteller oss at vi vil laste inn filen "style.css" som stilark. -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!-- Inne i body-tagen legger vi alt av synlige elementer. Som navnet sier er dette kroppen til dokumentet. -->
+  <body>
+    <header>
+      <h1>Intro til CSS og HTML</h1>
+    </header>
+    <section class="landSeksjon">
+      <h3 class="overskrift">Verdens 3 største land</h3>
+
+      <ol>
+        <li>Russland</li>
+        <li>Kanada</li>
+        <li>USA</li>
+      </ol>
+    </section>
+
+    <section>
+      <h3 class="overskrift">Ledere i Formel 1</h3>
+      <table id="f1table">
+        <thead>
+          <th>Plass</th>
+          <th>Fører</th>
+          <th>Poeng</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1.</td>
+            <td>Max Verstappen</td>
+            <td>226.5</td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td>Lewis Hamilton</td>
+            <td>221.5</td>
+          </tr>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td>Valtteri Bottas</td>
+            <td>141</td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td>Lando Norris</td>
+            <td>132</td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td>Sergio Perez</td>
+            <td>118</td>
+          </tr>
+          
+        </tbody>
+      </table>
+    </section>
+  </body>
+</html>
