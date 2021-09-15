@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+}
+
+.app {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.pb {
+  border-radius: 200px;
+  height: 270px;
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.pb:hover {
+  transform: scale(1.1);
+}
+
+.cv {
+  background-color: azure;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin: 20px 0 0;
+}
+
+h2 {
+  margin: 20px 0 0;
+}
+
+h3 {
+  margin: 0;
+}
+ul {
+  padding-left: 10px;
+}
+li {
+  margin: 10px;
+}
+a {
+  color: #42b983;
+}
+i {
+  margin-right: 10px;
+}
+.container {
+  text-align: left;
+  padding: 20px 20px;
+  background-color: white;
+  border-radius: 10px;
+  margin: 13px;
+  width: 70%;
+  align-self: center;
+}
+
+.field {
+  border-top: 2px solid lightgray;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 90%;
+  }
+}
